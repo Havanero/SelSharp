@@ -20,10 +20,10 @@ namespace SelSharp
     {
 	   destination.Deposit(amount);
 	
-  	if(balance-amount < minimumBalance)
-    throw new InsufficientFundsException();
+  		if(balance-amount < minimumBalance)
+    	throw new InsufficientFundsException();
 		
-  	Withdraw(amount);
+  		Withdraw(amount);
     }
 
     public decimal Balance
